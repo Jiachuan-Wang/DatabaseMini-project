@@ -1,0 +1,24 @@
+CREATE TABLE KeyCountryConfirmed
+(
+  	Date date NOT NULL,
+  	China INT,
+ 	US INT,
+	United_Kingdom INT,
+	Italy INT,
+	France INT,
+	Germany INT,
+	Spain INT,
+	Iran INT,
+	PRIMARY KEY (Date));
+
+COPY KeyCountryConfirmed FROM 'C:/key-countries-pivoted_csv.csv' CSV HEADER DELIMITER ',';
+				 
+CREATE TABLE OneCountryConfirmed
+(
+  	Date date,
+	CountryName text,
+	ConfirmedCases int,
+	Recovered int,
+	Deaths int);
+
+COPY OneCountryConfirmed FROM 'C:/countries-aggregated_csv.csv' CSV HEADER DELIMITER ',';
