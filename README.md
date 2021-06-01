@@ -1,6 +1,6 @@
 Database Mini-project
 
-Quick Start:
+Quick Start:n/
 Run the Python code.
 Type the date in user interface, in the form of Year-Month-Day, which should be greater than or equal to 2020-01-22 and less than or equal to today's date.
 Then the user interface outputs the country with the largest number of confirmed cases till that day and the number of cases. An HTML file reflecting the COVID-19 situation of 8 key countries on that day will be generated in the same directory of Python code, containing a world map in the form of a heat map.
